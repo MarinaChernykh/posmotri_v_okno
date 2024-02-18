@@ -53,6 +53,7 @@ ol {
 .content {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   inline-size: 1140px;
 }
 
@@ -157,7 +158,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  inline-size: 399px;
   block-size: 100%;
 }
 
@@ -175,14 +175,9 @@ ol {
 
 .content__list {
   position: relative;
-  overflow: auto;
+  overflow-y: auto;
   inline-size: 100%;
   max-block-size: 298px;
-}
-
-.content__list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 
 .content__list-item:not(:last-child) {
